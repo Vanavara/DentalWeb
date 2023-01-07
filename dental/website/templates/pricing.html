@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,15 +37,15 @@
           <div class="col-6 col-md-9 col-lg-8">
             <div class="top-header-content">
               <a href="#" data-toggle="tooltip" data-placement="bottom" title="Here will be your address"><i class="fa fa-map-marker"></i> <span>Here will be your address</span></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="your_emial@gmail.com"><i class="fa fa-envelope"></i> <span>your_email@gmail.com</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="your_email@gmail.com"><i class="fa fa-envelope"></i> <span>your_email@gmail.com</span></a>
             </div>
           </div>
           <!-- Top Header Social Info -->
           <div class="col-6 col-md-3 col-lg-4">
             <div class="top-header-social-info text-right">
-              <a href="http://facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a href="http://twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="http://linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title">Contact</h2>
+          <h2 class="title">Our Pricing</h2>
         </div>
       </div>
     </div>
@@ -146,8 +146,8 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Our Pricing</li>
             </ol>
           </nav>
         </div>
@@ -156,72 +156,145 @@
   </div>
   <!-- ***** Breadcrumb Area End ***** -->
 
-  {% if message_name %}
-  <center><h3>Thanks, {{ message_name }}!</h3>
-    <br/>
-    we received your message and will contact you asap</center>
-  {% endif %}
-
-  <!-- ***** Contact Area Start ***** -->
-  <section class="dento-contact-area mt-50 mb-100">
+  <!-- ***** Dento Pricing Table Area Start ***** -->
+  <section class="dento-pricing-table-area mt-50 section-padding-0-100">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="google-maps mb-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11551.68989283682!2d49.292714748042904!3d68.78236412899855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4442868f671b6b39%3A0x9a4db9fbe726fadc!2sBugrino%2C%20Nenets%20Autonomous%20Okrug%2C%20Russia%2C%20166721!5e0!3m2!1sen!2sid!4v1672897873539!5m2!1sen!2sid"
-              allowfullscreen></iframe>
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Service Names</th>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Teeth Whitening Service at home</th>
+                  <td>1 times</td>
+                  <td>$115.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teeth Whitening Service at Dental Clinic</th>
+                  <td>1 times</td>
+                  <td>$100.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ceramic crowns and fillings Dental porcelain</th>
+                  <td>1 times</td>
+                  <td>$99.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Remove crowns, bridges Service</th>
+                  <td>1 tooth</td>
+                  <td>$50.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>$400.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>$35.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>$99.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>$170.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>$499.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>$600.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>$400.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>$35.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>$99.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>$170.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>$499.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>$600.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>$400.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>$35.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>$99.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>$170.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>$499.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>$600.00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <!-- Contact Information -->
-        <div class="col-12 col-md-4">
-          <div class="contact-information">
-            <h5>Address</h5>
-            <p>Here will be your address</p>
-
-            <h5>Phone</h5>
-            <p>+ 62 398 83257</p>
-
-            <h5>Email</h5>
-            <p class="mb-0">your_emial@gmail.com</p>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="col-12 col-md-8">
-          <div class="contact-form">
-            <!-- Section Heading -->
-            <div class="section-heading">
-              <h2>Get In Touch</h2>
-              <div class="line"></div>
-            </div>
-            <!-- Form -->
-            <form action="{% url 'contact'%}" method="post">
-              {% csrf_token %}
-              <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
-                </div>
-                <div class="col-lg-6">
-                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
-                </div>
-                <div class="col-12">
-                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn dento-btn">Send Message</button>
-                </div>
-              </div>
-            </form>
-
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** Contact Area End ***** -->
+  <!-- ***** Dento Pricing Table Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
   <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
@@ -234,8 +307,8 @@
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
               <p><i class="icon_pin"></i> Here will be your address</p>
-              <p><i class="icon_phone"></i>+ 63 5949 3298</p>
-              <p><i class="icon_mail"></i> your_email.dento@gmail.com</p>
+              <p><i class="icon_phone"></i> +62 2252 2250 122</p>
+              <p><i class="icon_mail"></i> your_email@gmail.com</p>
             </div>
           </div>
         </div>
@@ -298,9 +371,9 @@
 
             <!-- Social Info -->
             <div class="footer-social-info">
-              <a href="http://facebook.com" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a href="http//twitter.com" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="http://linkedin.com" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>

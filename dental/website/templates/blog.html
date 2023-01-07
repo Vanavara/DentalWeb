@@ -37,15 +37,15 @@
           <div class="col-6 col-md-9 col-lg-8">
             <div class="top-header-content">
               <a href="#" data-toggle="tooltip" data-placement="bottom" title="Here will be your address"><i class="fa fa-map-marker"></i> <span>Here will be your address</span></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="your_emial@gmail.com"><i class="fa fa-envelope"></i> <span>your_email@gmail.com</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="your_email@gmail.com"><i class="fa fa-envelope"></i> <span>your_email@gmail.com</span></a>
             </div>
           </div>
           <!-- Top Header Social Info -->
           <div class="col-6 col-md-3 col-lg-4">
             <div class="top-header-social-info text-right">
-              <a href="http://facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a href="http://twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="http://linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title">Contact</h2>
+          <h2 class="title">Blog</h2>
         </div>
       </div>
     </div>
@@ -146,8 +146,8 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Blog</li>
             </ol>
           </nav>
         </div>
@@ -156,72 +156,192 @@
   </div>
   <!-- ***** Breadcrumb Area End ***** -->
 
-  {% if message_name %}
-  <center><h3>Thanks, {{ message_name }}!</h3>
-    <br/>
-    we received your message and will contact you asap</center>
-  {% endif %}
-
-  <!-- ***** Contact Area Start ***** -->
-  <section class="dento-contact-area mt-50 mb-100">
+  <!-- *****Blog Area Start ***** -->
+  <section class="dento-blog-area mt-50">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="google-maps mb-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11551.68989283682!2d49.292714748042904!3d68.78236412899855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4442868f671b6b39%3A0x9a4db9fbe726fadc!2sBugrino%2C%20Nenets%20Autonomous%20Okrug%2C%20Russia%2C%20166721!5e0!3m2!1sen!2sid!4v1672897873539!5m2!1sen!2sid"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+        <div class="col-12 col-lg-8">
 
-      <div class="row">
-        <!-- Contact Information -->
-        <div class="col-12 col-md-4">
-          <div class="contact-information">
-            <h5>Address</h5>
-            <p>Here will be your address</p>
-
-            <h5>Phone</h5>
-            <p>+ 62 398 83257</p>
-
-            <h5>Email</h5>
-            <p class="mb-0">your_emial@gmail.com</p>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="col-12 col-md-8">
-          <div class="contact-form">
-            <!-- Section Heading -->
-            <div class="section-heading">
-              <h2>Get In Touch</h2>
-              <div class="line"></div>
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/16.jpg' %}" alt="">
+              </a>
             </div>
-            <!-- Form -->
-            <form action="{% url 'contact'%}" method="post">
-              {% csrf_token %}
-              <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">How your mouth bacteria can harm your lungs</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/17.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">What is the best kind of toothpaste to use?</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/18.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Why you should avoid sipping your drinks</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/19.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">How long does numbness last after the dentist?</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Blog Item -->
+          <div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+              <a href="./blog-details.html">
+                <img src="{% static 'website/img/bg-img/20.jpg' %}" alt="">
+              </a>
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="./blog-details.html" class="post-title">Lie bumps (transient lingual papillitis): What to know</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="dento-pagination mb-100">
+            <ul class="pagination">
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area search-widget">
+              <form action="#" method="post">
+                <input type="search" name="search" class="form-control" placeholder="Search ...">
+                <button type="submit"><i class="icon_search"></i></button>
+              </form>
+            </div>
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area catagories-widget">
+              <h5 class="widget-title">Categories</h5>
+
+              <!-- catagories list -->
+              <ul class="catagories-list">
+                <li><a href="#">Dentistry Articles</a></li>
+                <li><a href="#">Oral Health</a></li>
+                <li><a href="#">Dental Technology</a></li>
+                <li><a href="#">Kids Care Dental</a></li>
+                <li><a href="#">Healthy Smiles, Inside &amp; Out</a></li>
+              </ul>
+            </div>
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area news-widget">
+              <h5 class="widget-title">Recent News</h5>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg-img/21.jpg' %}" alt="">
                 </div>
-                <div class="col-lg-6">
-                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
-                </div>
-                <div class="col-12">
-                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn dento-btn">Send Message</button>
+                <div class="blog-content">
+                  <a href="#" class="post-title">Tooth decay: why good dental hygiene is important</a>
+                  <span class="post-date">28 Sep 2018</span>
                 </div>
               </div>
-            </form>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg-img/22.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a href="#" class="post-title">Six reasons your breath might smell like poop</a>
+                  <span class="post-date">28 Sep 2018</span>
+                </div>
+              </div>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg-img/23.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a href="#" class="post-title">Everything you need to know about sinus infection</a>
+                  <span class="post-date">28 Sep 2022</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a href="#"><img class="w-100" src="{% static 'website/img/bg-img/adds.png' %}" alt=""></a>
+            </div>
 
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** Contact Area End ***** -->
+  <!-- *****Blog Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
   <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
@@ -230,12 +350,12 @@
         <!-- Single Footer Widget -->
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-footer-widget">
-            <a href="./home.html" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+            <a href="./index.html" class="d-block mb-4"><img src="./img/core-img/logo.png" alt=""></a>
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
               <p><i class="icon_pin"></i> Here will be your address</p>
-              <p><i class="icon_phone"></i>+ 63 5949 3298</p>
-              <p><i class="icon_mail"></i> your_email.dento@gmail.com</p>
+              <p><i class="icon_phone"></i> +62 2252 2250 122</p>
+              <p><i class="icon_mail"></i> your_email@gmail.com</p>
             </div>
           </div>
         </div>
@@ -298,9 +418,9 @@
 
             <!-- Social Info -->
             <div class="footer-social-info">
-              <a href="http://facebook.com" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a href="http//twitter.com" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="http://linkedin.com" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
