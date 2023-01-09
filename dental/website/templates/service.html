@@ -14,7 +14,7 @@
   <!-- Favicon -->
   <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
 
-  <!-- Core Stylesheet -->{% static 'website/' %}
+  <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
 
 </head>
@@ -34,7 +34,7 @@
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <!-- Top Content -->
-          <div class="col-6 col-md-9 col-lg-8">{% static 'website/' %}
+          <div class="col-6 col-md-9 col-lg-8">
             <div class="top-header-content">
               <a href="#" data-toggle="tooltip" data-placement="bottom" title="Here will be your address"><i class="fa fa-map-marker"></i> <span>Here will be your address</span></a>
               <a href="#" data-toggle="tooltip" data-placement="bottom" title="your_email@gmail.com"><i class="fa fa-envelope"></i> <span>your_email@gmail.com</span></a>
@@ -61,7 +61,7 @@
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
             <!-- Logo -->
-            <a class="nav-brand" href="index.html"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
 
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
@@ -79,7 +79,7 @@
               <!-- Nav Start -->
               <div class="classynav">
                 <ul id="nav">
-                  <li><a href="home.html">Home</a></li>
+                  <li><a href="{% url 'home' %}">Home</a></li>
                   <li><a href="#">Pages</a>
                     <ul class="dropdown">
                       <li><a href="home.html">- Home</a></li>
@@ -146,7 +146,7 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Service</li>
             </ol>
           </nav>
@@ -255,7 +255,7 @@
               <div class="testimonial-content">
                 <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
                   very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
+                <h6>Nikolai Ivanovich</h6>
                 <p>Dental Patient</p>
               </div>
             </div>
@@ -270,7 +270,7 @@
               <div class="testimonial-content">
                 <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
                   very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
+                <h6>Nikolai Ivanovich</h6>
                 <p>Dental Patient</p>
               </div>
             </div>
@@ -285,7 +285,7 @@
               <div class="testimonial-content">
                 <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
                   very helpful. Excellent treatment and advice.”</h5>
-                <h6>Sergey Petrov</h6>
+                <h6>Nikolai Ivanovich</h6>
                 <p>Dental Patient</p>
               </div>
             </div>
@@ -369,18 +369,18 @@
   <!-- ***** Blog Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
-  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/3.jpg);">
     <div class="container">
       <div class="row">
         <!-- Single Footer Widget -->
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-footer-widget">
-            <a href="./index.html" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
               <p><i class="icon_pin"></i> Here will be your address</p>
-              <p><i class="icon_phone"></i> +62 2122 2250 122</p>
-              <p><i class="icon_mail"></i> your_email.dento@gmail.com</p>
+              <p><i class="icon_phone"></i> +62 2252 2250 122</p>
+              <p><i class="icon_mail"></i> your_email@gmail.com</p>
             </div>
           </div>
         </div>
